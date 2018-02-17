@@ -1,0 +1,131 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: fantasy;
+}
+
+header, nav, main, footer { 
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 600px;
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+}
+
+header {background-color: #06325b}
+header h1 {
+    font-family: "rock salt", fantasy, cursive;
+    text-align: center;
+    color: #ffffff;
+}
+header figure.logo {
+    margin: 0;
+    padding: 0;
+}
+header figure.logo img{
+    float: left;
+}
+header .subheading {
+    font-family: "rock salt", fantasy, cursive;
+    text-align: center;
+    color: #ffffff;
+}
+nav {
+    background-color: #f4f20f;
+    font-family: fantasy, cursive;
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 1px solid #555;
+}
+nav ul li { 
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+nav ul li:last-child{
+    border-bottom: none;
+}
+nav ul li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+nav ul li.active a {
+    background-color: #3b73ff;
+    color: white;}
+nav ul li a:hover {
+    background-color: #555;
+    color: white;
+}
+nav ul.hide { display: none;}
+
+main {}
+main h2 { 
+    text-align: center;
+    color: #3b73ff;
+}
+main figure.franklinphoto { 
+    margin: 0 0 0 2%
+}
+main figure.franklinphoto img { 
+    width: 100% 
+}
+
+section {text-align: center;}
+section h3 {color: #3b73ff;}
+section div.current picture{
+    padding-left: 60px;
+    float: left;
+}
+section div.highlow p {
+    clear: both;
+    display: inline;
+}
+section.forecast {
+    display: none;
+}
+article {
+    clear: both;
+    text-align: center;
+}
+article h3 {
+    text-align: center;
+    color: #3b73ff;
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  display: block;
+  width: 90%; /* fill the page in the small/phone view */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: #b7b7b7;
+    color: #000;
+}
+footer aside {
+    
+}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear:both;
+}
+/* Other Class Selectors */

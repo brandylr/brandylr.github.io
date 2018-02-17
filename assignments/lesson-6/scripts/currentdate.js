@@ -1,0 +1,1 @@
+document.getElementById("jsdate").innerHTML = "Monday, 6 April 2020";
