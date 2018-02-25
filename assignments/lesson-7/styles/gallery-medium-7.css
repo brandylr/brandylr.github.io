@@ -30,7 +30,6 @@
     nav ul li {
       border: none;
       flex: 1 100%;
-      align-content: baseline;
     }
     nav ul li a {
       font-size: 1.25em;
