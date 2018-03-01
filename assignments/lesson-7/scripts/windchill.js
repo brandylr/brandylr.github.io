@@ -1,7 +1,6 @@
 
-var tempF = 90 /*parseFloat(document.getElementById(90).value);*/
-var speed = 5 /*parseFloat(document.getElementById(5).value);*/
-windChill(tempF, speed);
+var tempF = 90; /*parseFloat(document.getElementById(90).value);*/
+var speed = 5; /*parseFloat(document.getElementById(5).value);*/
 var chill = windChill(tempF, speed);
 document.getElementById("windchill").innerHTML = chill;
 
