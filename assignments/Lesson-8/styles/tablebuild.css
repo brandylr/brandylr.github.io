@@ -35,10 +35,11 @@ tr:nth-child(even) td {
 tr:nth-child(odd) td {
   background-color: #e7ffed;
 }
-tr:nth-child(6) :nth-child(1) {font-style: italic;}
 tr:nth-child(5) :nth-child(3){
     background-color: #628ca6;
     color: white;
 }
-tfoot {background-color: #7fb9c2; }
-tfoot td {font-size: 12px }
+tr:nth-child(6) :nth-child(1) {font-style: italic;}
+
+tfoot {background-color: #7fb9c2;}
+tfoot td {font-size: 12px;}
