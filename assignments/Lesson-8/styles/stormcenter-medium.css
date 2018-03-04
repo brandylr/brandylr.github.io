@@ -1,0 +1,40 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    header, nav, main, footer {
+        max-width: 900px;
+    }
+    header h1 {
+        margin-left: 20px;
+    }
+    header .subheading {
+        margin-left: 100px;
+    }
+    nav { 
+background: #f4f20f; /* Old browsers */
+background: -moz-linear-gradient(top, #f4f20f 0%, #efeb7c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #f4f20f 0%,#efeb7c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #f4f20f 0%,#efeb7c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f20f', endColorstr='#efeb7c',GradientType=0 ); /* IE6-9 */}
+    nav button { display: none; }  /* hamburger button does not need to be shown */
+    nav ul.hide {
+        display: flex;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      flex-direction: row;
+    }  
+    nav ul li {
+      border: none;
+      flex: 1 100%;
+    }
+    nav ul li a {
+      font-size: 1.25em;
+    }
+    
+    footer{
+      clear: both;
+    }
+}

@@ -80,7 +80,6 @@ nav ul.hide { display: none;}
 main {}
 fieldset{
     background-color: #80a4ff;
-    border-radius: .75em;
     margin-top: .5rem
     }
 legend {
