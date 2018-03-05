@@ -95,6 +95,11 @@ label span{
     display: block;
     padding-top: .75em;
 }
+label textarea {
+    vertical-align: top;
+    height: 20em;
+    width: 30em;
+}
 input.submitBtn {
     padding: .5em;
     border-radius: .5em;
