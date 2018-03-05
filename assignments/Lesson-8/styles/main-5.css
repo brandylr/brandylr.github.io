@@ -1,0 +1,134 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: fantasy;
+}
+
+header, nav, main, footer { 
+    margin: 0;
+    padding: .5rem;
+    max-width: 600px;
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+}
+
+header {
+    background-color: #06325b;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center
+}
+header h1 {
+    font-family: "rock salt", fantasy, cursive;
+    text-align: center;
+    color: #ffffff;
+}
+header figure.logo {
+    margin: 0;
+    padding: 0;
+}
+header .subheading {
+    font-family: "rock salt", fantasy, cursive;
+    text-align: center;
+    color: #ffffff;
+}
+nav {
+    background-color: #f4f20f;
+    font-family: fantasy, cursive;
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 1px solid #555;
+    display: flex;
+    flex-direction: column;
+}
+nav ul li {
+    flex: 2em;
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+nav ul li:last-child{
+    border-bottom: none;
+}
+nav ul li a {
+    color: #000;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+nav ul li.active a {
+    background-color: #3b73ff;
+    color: white;}
+nav ul li a:hover {
+    background-color: #555;
+    color: white;
+}
+nav ul.hide { display: none;}
+
+main {}
+main h2 { 
+    text-align: center;
+    color: #3b73ff;
+}
+main figure.franklinphoto { 
+    margin: 0 0 0 2%
+}
+main figure.franklinphoto img { 
+    width: 100% 
+}main figure.daisies {
+    display: none;
+}
+
+section {text-align: center;}
+section h3 {color: #3b73ff;}
+section div.container {
+    display: flex;
+}
+section div.current {
+    align-self: center;
+}
+section.forecast {
+    display: none;
+}
+article {
+    clear: both;
+    text-align: center;
+}
+article h3 {
+    text-align: center;
+    color: #3b73ff;
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 90%; /* fill the page in the small/phone view */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: #b7b7b7;
+    color: #000;
+}
+footer aside {
+    
+}
+footer>p {} /* This structure refers to p elements that are direct children of the footer element */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear:both;
+}
+/* Other Class Selectors */

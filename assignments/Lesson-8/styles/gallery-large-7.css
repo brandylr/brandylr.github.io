@@ -11,7 +11,13 @@ header{
     justify-content: center;
     align-items: center;
 }
-main {}
 
+  section {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .5em
+}
+    section p img:hover {
+       box-shadow: 10px 10px 5px grey; 
+    }
   
 }
