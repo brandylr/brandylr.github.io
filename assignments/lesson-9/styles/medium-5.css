@@ -34,6 +34,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f20f', end
       font-size: 1.25em;
     }
     section div.container {
+       flex-flow: row;
        justify-content: space-around;
        align-items: center;
     }
@@ -42,14 +43,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f20f', end
       justify-content: center;
       text-align: center;
     }  /* show the 10-day forecast with the medium view and up */
-    table, th, td {
-        border: 1px solid black;
-    }
-    table {
-        margin-left: auto;
-        margin-right: auto;
-        width: 100%
-    }
+    
     article div.container {
         display: flex;
         flex-direction: row;

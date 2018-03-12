@@ -36,12 +36,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f20f', end
 main { 
     
 }
-main article.spring p {
-    float: left;
-    }
-main article.spring img {
-    float: right;
-    }
+
 
     footer{
       clear: both;

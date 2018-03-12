@@ -29,7 +29,7 @@
   <nav>
     <button onclick="toggleNavMenu()">&#9776;</button>
     <ul id="primaryNav" class="hide">
-      <li><a href="#">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="franklin-8.html">Franklin</a></li>
       <li><a href="#">Greenville</a></li>
       <li><a href="#">Springfield</a></li>
@@ -46,7 +46,7 @@
            srcset="images/springsmall.jpg 600w, images/springmedium.jpg 900w">
         </figure>
         <figure class="daisies">
-          <img src="images/springlarge.jpg" alt="Daisies" sizes="50vw">
+          <img src="images/springlarge.jpg" alt="Daisies">
         </figure>
         <section>
           <h3>Weather Summary</h3>
@@ -63,7 +63,8 @@
               </div>
       
               <div class="conditions">
-                 
+                 <p>Wind Speed: <span id="wind"></span></p>
+                 <p>Feels Like: <span id="windchill"></span>&deg;F</p>
               </div>
             </div>
         </section>
@@ -72,7 +73,7 @@
         
     <section class="forecast">
         <h3>Forecast</h3>
-      <span id="forecast" src=""></span>
+            <p><span id="forecast" src="" alt="weather forecast"></span></p>
     </section>
       
     <article>

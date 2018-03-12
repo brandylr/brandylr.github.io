@@ -94,6 +94,7 @@ section {text-align: center;}
 section h3 {color: #3b73ff;}
 section div.container {
     display: flex;
+    flex-flow: column;
 }
 section div.current {
     align-self: center;
