@@ -4,7 +4,7 @@
 
 body {
   font-size: 16px;
-  font-family: 'Playfair Display', serif;
+  font-family: fantasy;
 }
 
 header, nav, main, footer { 
@@ -36,7 +36,7 @@ header .subheading {
 }
 nav {
     background-color: #f4f20f;
-    font-family: "Playfair Display", serif;
+    font-family: fantasy, cursive;
 }
 nav button {
     margin: .2rem 2%;
@@ -55,10 +55,9 @@ nav ul {
     flex-direction: column;
 }
 nav ul li {
-    margin: 0;
-    padding: .5em;
-    border-bottom: 1px solid #555;
+    flex: 2em;
     text-align: center;
+    border-bottom: 1px solid #555;
 }
 nav ul li:last-child{
     border-bottom: none;
@@ -77,36 +76,45 @@ nav ul li a:hover {
 }
 nav ul.hide { display: none;}
 
-main { 
-    display: grid;
-    grid-gap: 10px;
+main {}
+main h2 { 
+    text-align: center;
+    color: #3b73ff;
 }
-main article.spring {
-    border: black solid 1px;
-    border-radius: 10px;
+main figure.franklinphoto { 
+    margin: 0 0 0 2%
+}
+main figure.franklinphoto img { 
+    width: 100% 
+}main figure.daisies {
+    display: none;
+}
+
+section {text-align: center;}
+section h3 {color: #3b73ff;}
+section div.container {
+    display: flex;
+}
+section div.current {
+    align-self: center;
+}
+section.forecast {
+    display: none;
+}
+article {
+    clear: both;
     text-align: center;
 }
-main article.spring h3{
-    font-size: 1.5em;
-    font-weight: 700;
-}
-section.franklin, .greenville, .springfield {
-    border: black solid 1px;
-    border-radius: 10px;
-}
-section h3{
-    font-size: 1.5em;
-    font-weight: 700;
-}
-section p {
-  margin: 0 10px;
+article h3 {
+    text-align: center;
+    color: #3b73ff;
 }
 
-section ul {
-  margin-top: 1em;
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 90%; /* fill the page in the small/phone view */
+  margin-left: auto;
+  margin-right: auto;
 }
-
-
 
 footer {
     text-align: center;

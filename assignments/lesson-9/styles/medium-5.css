@@ -33,15 +33,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f20f', end
     nav ul li a {
       font-size: 1.25em;
     }
-main { 
-    
-}
-main article.spring p {
-    float: left;
+    section div.container {
+       justify-content: space-around;
+       align-items: center;
     }
-main article.spring img {
-    float: right;
+    section.forecast { 
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }  /* show the 10-day forecast with the medium view and up */
+    table, th, td {
+        border: 1px solid black;
     }
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%
+    }
+    article div.container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+    article p.town-article img { 
+        width: 50%;
+        margin-right: 30px;
+    }  /* responsive images */
 
     footer{
       clear: both;

@@ -1,4 +1,6 @@
-   var section = document.querySelector('section');
+    var franklin = document.querySelector('section.franklin');
+    var greenville = document.querySelector('section.greenville');
+    var springfield = document.querySelector('section.springfield');
 
     var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
     var request = new XMLHttpRequest();
@@ -10,11 +12,10 @@
         townInfo(information);
         
     
-        
     function townInfo(jsonObj) {
-        var towns = jsonObj['towns'];
+        var town = jsonObj['towns'];
         
-        for (var i = 0; i < towns.length; i++) {
+        for (var i = 0; i < town.length; i++) {
             if (i == 2) {continue;}
             var myArticle = document.createElement('article');
             var myH3 = document.createElement('h3');
@@ -25,14 +26,14 @@
             var myPara5 = document.createElement('p');
             var myList = document.createElement('ul');
             
-            myH3.textContent = towns[i].name;
-            myPara1.textContent = 'Motto: ' + towns[i].motto;
-            myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
-            myPara3.textContent = 'Current Population: ' + towns[i].currentPopulation;
-            myPara4.textContent = 'Average Rainfall: ' + towns[i].averageRainfall + "in";
+            myH3.textContent = town[i].name;
+            myPara1.textContent = 'Motto: ' + town[i].motto;
+            myPara2.textContent = 'Year Founded: ' + town[i].yearFounded;
+            myPara3.textContent = 'Current Population: ' + town[i].currentPopulation;
+            myPara4.textContent = 'Average Rainfall: ' + town[i].averageRainfall + "in";
             myPara5.textContent = 'Upcoming Events: '
             
-            var townEvents = towns[i].events;
+            var townEvents = town[i].events;
             for (var j = 0; j < townEvents.length; j++) {
                 var listItem = document.createElement('li');
                 listItem.textContent = townEvents[j];
@@ -47,8 +48,13 @@
             myArticle.appendChild(myPara5);
             myArticle.appendChild(myList);
             
-            section.appendChild(myArticle);
-            
+            if (town[i].name == "Franklin") {
+                franklin.appendChild(myArticle);
+            } else if (town[i].name == "Greenville") {
+                greenville.appendChild(myArticle);
+            } else if (town[i].name == "Springfield") {
+                springfield.appendChild(myArticle);
+            }
         }
     }
     }

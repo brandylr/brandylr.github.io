@@ -4,11 +4,11 @@
 
 body {
   font-size: 16px;
-  font-family: 'Playfair Display', serif;
+  font-family: fantasy;
 }
 
 header, nav, main, footer { 
-    margin: 0;
+    margin: 1.25rem auto;
     padding: .5rem;
     max-width: 600px;
     /* the comma means apply the following CSS declarations to all of the listed elements */
@@ -36,7 +36,7 @@ header .subheading {
 }
 nav {
     background-color: #f4f20f;
-    font-family: "Playfair Display", serif;
+    font-family: fantasy, cursive;
 }
 nav button {
     margin: .2rem 2%;
@@ -55,10 +55,9 @@ nav ul {
     flex-direction: column;
 }
 nav ul li {
-    margin: 0;
-    padding: .5em;
-    border-bottom: 1px solid #555;
+    flex: 2em;
     text-align: center;
+    border-bottom: 1px solid #555;
 }
 nav ul li:last-child{
     border-bottom: none;
@@ -77,37 +76,13 @@ nav ul li a:hover {
 }
 nav ul.hide { display: none;}
 
-main { 
-    display: grid;
-    grid-gap: 10px;
-}
-main article.spring {
-    border: black solid 1px;
-    border-radius: 10px;
-    text-align: center;
-}
-main article.spring h3{
-    font-size: 1.5em;
-    font-weight: 700;
-}
-section.franklin, .greenville, .springfield {
-    border: black solid 1px;
-    border-radius: 10px;
-}
-section h3{
-    font-size: 1.5em;
-    font-weight: 700;
-}
+main {}
 section p {
-  margin: 0 10px;
+    font-size: 10px;
 }
-
-section ul {
-  margin-top: 1em;
+section {
+    display: grid;
 }
-
-
-
 footer {
     text-align: center;
     background-color: #b7b7b7;

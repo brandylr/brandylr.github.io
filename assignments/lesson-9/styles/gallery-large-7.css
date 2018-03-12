@@ -1,0 +1,23 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  
+header, nav, main, footer {
+    margin: 1.25rem auto;
+    padding: .5rem;
+    max-width: 1100px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  section {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: .5em
+}
+    section p img:hover {
+       box-shadow: 10px 10px 5px grey; 
+    }
+  
+}
