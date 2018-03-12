@@ -1,4 +1,4 @@
-var requestURL = 'http://api.wunderground.com/api/38c97597ddc76b32/conditions/q/MN/Franklin.json';
+var requestURL = 'https://api.wunderground.com/api/38c97597ddc76b32/conditions/q/MN/Franklin.json';
 var weatherObject = new XMLHttpRequest();
 
 weatherObject.open('GET', requestURL, true);
