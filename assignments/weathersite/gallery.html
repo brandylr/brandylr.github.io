@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Related - Gallery</title>
+  <meta name="author" content="Brandy Robinson">
+  <meta name="description" content="Weather Related Gallery is a page that has beautiful weather related pictures.">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/gallery-main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/gallery-medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/gallery-large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header class="clearfix" class="container">
+    <figure class="logo">
+      <img src="images/storm.jpg" alt="The site logo"
+             srcset="images/storm1.jpg 1x, images/storm2.jpg 2x, images/storm3.jpg 3x">
+    </figure>
+      
+    <h1>Weather Related</h1>
+    <div class="subheading">All Your Weather Needs</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="franklin.html">Franklin</a></li>
+      <li><a href="greenville.html">Greenville</a></li>
+      <li><a href="springfield.html">Springfield</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <section>
+      <p>
+        <img src="images/bubble.jpg" alt="irredescent bubble">
+        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+      </p>
+      <p>
+        <img src="images/tiger.jpg" alt="tiger and cub in snow">
+        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+      </p>
+      <p>
+        <img src="images/inflight.jpg" alt="butterflies in flight">
+        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+      </p>
+      <p>
+        <img src="images/junglerainbow.jpg" alt="rainbow in a jungle">
+        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+      </p>
+      <p>
+        <img src="images/lightning.jpg" alt="lightning strike">
+        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+      </p>
+      <p>
+        <img src="images/snowflake.jpg" alt="snowflake">
+        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+      </p>
+    </section>
+  </main>
+    
+  <footer>
+    <aside>
+      Contact information placeholder
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Related | <span id="jsdate"></span></p>
+  </footer>
+    
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+
+</body>
+</html>

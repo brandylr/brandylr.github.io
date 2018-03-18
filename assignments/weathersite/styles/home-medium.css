@@ -32,14 +32,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f20f', end
     }
     nav ul li a {
       font-size: 1.25em;
-    }
-    .spring p {
-        float: none;
-    }   
-.spring img {
-    float: right;
-    margin: 2em;
-    }
+    } 
+   
     .franklin img, .springfield img {
         float: left;
         margin: 2em;

@@ -4,7 +4,7 @@
 
 body {
   font-size: 16px;
-  font-family: 'Playfair Display', serif;
+  font-family: fantasy;
 }
 
 header, nav, main, footer { 
@@ -36,7 +36,7 @@ header .subheading {
 }
 nav {
     background-color: #f4f20f;
-    font-family: "Playfair Display", serif;
+    font-family: fantasy, cursive;
 }
 nav button {
     margin: .2rem 2%;
@@ -55,10 +55,9 @@ nav ul {
     flex-direction: column;
 }
 nav ul li {
-    margin: 0;
-    padding: .5em;
-    border-bottom: 1px solid #555;
+    flex: 2em;
     text-align: center;
+    border-bottom: 1px solid #555;
 }
 nav ul li:last-child{
     border-bottom: none;
@@ -70,51 +69,45 @@ nav ul li a {
 }
 nav ul li.active a {
     background-color: #3b73ff;
-    color: white;}
+    color: white;
+}
 nav ul li a:hover {
     background-color: #555;
     color: white;
 }
 nav ul.hide { display: none;}
 
-main { 
-    display: grid;
-    grid-gap: 10px;
-    align-content: center;
-}
-.spring {
+main {}
+fieldset{
+    background-color: #80a4ff;
+    margin-top: .5rem
+    }
+legend {
+    background-color: #cccccc;
+    padding: .25em;
     border: black solid 1px;
-    border-radius: 10px;
-    text-align: center;
+    border-radius: .5em;
 }
-.spring h3{
-    font-size: 1.5em;
-    font-weight: 700;
+label{
+    display: block;
 }
-.spring img {
-    margin-bottom: 1em;
+label span{
+    display: block;
+    padding-top: .75em;
 }
-section.franklin, .greenville, .springfield {
-    border: black solid 1px;
-    border-radius: 10px;
+label textarea {
+    vertical-align: top;
+    height: 20em;
+    width: 30em;
 }
-.franklin img, .greenville img, .springfield img {
-    margin: 2em;
+input.submitBtn {
+    padding: .5em;
+    border-radius: .5em;
+    width: 40%;
+    background-color: #06325b;
+    color: #fff;
+    box-shadow: 4px 4px 10px #555;
 }
-section h3{
-    font-size: 1.5em;
-    font-weight: 700;
-}
-section p {
-  margin: 0 10px;
-}
-
-section ul {
-  margin-top: 1em;
-}
-
-
-
 footer {
     text-align: center;
     background-color: #b7b7b7;

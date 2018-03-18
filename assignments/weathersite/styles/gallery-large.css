@@ -11,26 +11,13 @@ header{
     justify-content: center;
     align-items: center;
 }
-    
 
-main {
+  section {
     grid-template-columns: 1fr 1fr 1fr;
-    max-width: 1100px;
+    grid-gap: .5em
 }
-main article.spring {
-    grid-column-start: 1;
-    grid-column-end: 4;
-}
-    .spring p {
-        text-align:
+    section p img:hover {
+       box-shadow: 10px 10px 5px grey; 
     }
-    main article.spring img {
-    }    
-    .franklin img, .greenville img, .springfield img {
-        margin: 1em;
-    } 
-    
-    section h3{
-        margin: .5em;
-    }       
+  
 }
