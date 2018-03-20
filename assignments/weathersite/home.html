@@ -29,8 +29,8 @@
   <!-- site navigation use placeholder references -->
   <nav>
     <button onclick="toggleNavMenu()">&#9776;</button>
-    <ul id="primaryNav" class="hide">
-      <li><a href="#">Home</a></li>
+    <ul id="primaryNav" id="mainmenu" class="hide">
+      <li class="active"><a href="#">Home</a></li>
       <li><a href="franklin.html">Franklin</a></li>
       <li><a href="greenville.html">Greenville</a></li>
       <li><a href="springfield.html">Springfield</a></li>
@@ -42,10 +42,12 @@
   <main>
     <article class="spring">
       <h3>Spring Is On Its Way!</h3>
-        <p>
-        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
-        </p>
-        <img src="images/flowersm.jpg" alt="flowers">
+        <div class="help">
+          <p>
+          "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+          </p>
+          <img src="images/flowersm.jpg" alt="flowers">
+        </div>
       </article>
     <section class="franklin">
        <img src="images/franklinsunset.jpg" alt="Franklin at Sunset">   
@@ -64,7 +66,8 @@
     
   <footer>
     <aside>
-      Contact information placeholder
+      Weather Related<br>1994 Union Ct.<br>Greenville, US 98765<br>(234)564-3200<br>
+      contact@weatherrelated.com
     </aside>
     <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Related | <span id="jsdate"></span></p>
   </footer>

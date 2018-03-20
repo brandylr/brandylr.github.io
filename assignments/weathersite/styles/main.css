@@ -4,7 +4,7 @@
 
 body {
   font-size: 16px;
-  font-family: fantasy;
+  font-family: "Playfair Display", serif;
 }
 
 header, nav, main, footer { 
@@ -18,7 +18,7 @@ header {
     background-color: #06325b;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center
+    justify-content: center;
 }
 header h1 {
     font-family: "rock salt", fantasy, cursive;
@@ -36,7 +36,6 @@ header .subheading {
 }
 nav {
     background-color: #f4f20f;
-    font-family: fantasy, cursive;
 }
 nav button {
     margin: .2rem 2%;
@@ -55,9 +54,10 @@ nav ul {
     flex-direction: column;
 }
 nav ul li {
-    flex: 2em;
-    text-align: center;
+    margin: 0;
+    padding: .5em;
     border-bottom: 1px solid #555;
+    text-align: center;
 }
 nav ul li:last-child{
     border-bottom: none;
@@ -69,45 +69,68 @@ nav ul li a {
 }
 nav ul li.active a {
     background-color: #3b73ff;
-    color: white;
-}
+    color: white;}
 nav ul li a:hover {
     background-color: #555;
     color: white;
 }
 nav ul.hide { display: none;}
-
 main {}
-fieldset{
-    background-color: #80a4ff;
-    margin-top: .5rem
-    }
-legend {
-    background-color: #cccccc;
-    padding: .25em;
-    border: black solid 1px;
-    border-radius: .5em;
+main h2 { 
+    text-align: center;
+    color: #3b73ff;
 }
-label{
-    display: block;
+main figure.franklinphoto { 
+    margin: 0 0 0 2%
 }
-label span{
-    display: block;
-    padding-top: .75em;
+main figure.franklinphoto img { 
+    width: 100% 
+}main figure.daisies {
+    display: none;
 }
-label textarea {
-    vertical-align: top;
-    height: 20em;
-    width: 30em;
+main figure.springfieldphoto { 
+    margin: 0 0 0 2%
 }
-input.submitBtn {
-    padding: .5em;
-    border-radius: .5em;
-    width: 40%;
-    background-color: #06325b;
-    color: #fff;
-    box-shadow: 4px 4px 10px #555;
+main figure.springfieldphoto img { 
+    width: 100% 
+}main figure.springsun {
+    display: none;
 }
+main figure.greenvillephoto { 
+    margin: 0 0 0 2%
+}
+main figure.greenvillephoto img { 
+    width: 100% 
+}main figure.greennight {
+    display: none;
+}
+section {text-align: center;}
+section h3 {color: #3b73ff;}
+section div.container {
+    display: flex;
+    flex-flow: column;
+}
+section div.current {
+    align-self: center;
+}
+section.forecast {
+    display: none;
+}
+article {
+    clear: both;
+    text-align: center;
+}
+article h3 {
+    text-align: center;
+    color: #3b73ff;
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+  width: 95%; /* fill the page in the small/phone view */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 footer {
     text-align: center;
     

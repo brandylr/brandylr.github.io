@@ -33,19 +33,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f20f', end
     nav ul li a {
       font-size: 1.25em;
     }
-    .help {
-        display: flex;
-        margin-left: 1.5em;
+    section div.container {
+       flex-flow: row;
+       justify-content: space-around;
+       align-items: center;
     }
-    .franklin img, .springfield img {
-        float: left;
-        margin: 2em;
-    }
+    section.forecast { 
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      text-align: center;
+    }  /* show the 10-day forecast with the medium view and up */
     
-    .greenville img {
-        float: right;
-        margin: 2em;
+    article div.container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
     }
+    article p.town-article img { 
+        float: left;
+        width: 40%;
+        margin-right: 30px;
+    }  /* responsive images */
+
     footer{
       clear: both;
     }

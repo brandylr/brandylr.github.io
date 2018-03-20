@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather Related - Franklin City Weather Site</title>
+  <meta name="author" content="Brandy Robinson">
+  <meta name="description" content="Weather Related is a website that gives you up-to-date weather any time. It gives you a 10 day forecast so you can plan ahead for any camping or hiking trip, or if the kids just need to get outside and play.">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet"><!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header class="clearfix">
+    <figure class="logo">
+      <img src="images/storm.jpg" alt="The site logo"
+             srcset="images/storm1.jpg 1x, images/storm2.jpg 2x, images/storm3.jpg 3x">
+    </figure>
+      
+    <h1>Weather Related</h1>
+    <div class="subheading">All Your Weather Needs</div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="franklin.html">Franklin</a></li>
+      <li><a href="greenville.html">Greenville</a></li>
+      <li class="active"><a href="#">Springfield</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <h2>Springfield City</h2>
+      <div class="large">
+        <figure class="springfieldphoto">
+          <img src="images/springfieldsm.jpg" alt="Springfield Sun" sizes="100vw"
+           srcset="images/springfieldsm.jpg 600w, images/springfieldmed.jpg 900w">
+        </figure>
+        <figure class="springsun">
+          <img src="images/springfieldlg.jpg" alt="Springfield Sun">
+        </figure>
+        <section>
+          <h3>Weather Summary</h3>
+            <div class="container">
+              <div class="current">
+                <strong><span id="desc"></span></strong>
+                <picture>
+                  <img id="w_icon" src="" alt="current weather">
+                </picture>
+              </div>   
+              <div class="highlow">
+                <p> Current Temperature: <span id="currentTemp"></span>&deg;F</p>  
+                
+              </div>
+      
+              <div class="conditions">
+                 <p>Wind Speed: <span id="wind"></span></p>
+                 <p>Feels Like: <span id="windchill"></span>&deg;F</p>
+              </div>
+            </div>
+        </section>
+      </div>
+      
+        
+    <section class="forecast">
+        <h3>Forecast</h3>
+            <img id="forecast" src="https://www.wunderground.com/US/MI/Greenville.html" alt="weather forecast">
+    </section>
+      
+    <article>
+      <h3>Stars Beneath Our Feet?</h3>
+        <div class="container">
+          <p class="town-article">
+            <img src="images/springfieldnight.jpg" alt="Springfield City">
+            "The entire night sky before you- what a wonderful thought. Yet, this will never be unless you are an astronaut. An entire planet blocks half the sky. Ever wonder what shines under our feet, on the other side of this planet we call our home?<br>
+            The Earth beneath our feet hides stars we see at night only temporarily, as we spin around daily and night returns. A section of the sky below our feet, however, never rises in the east and is locked from our view. This is the far southern sky, observable only as we travel south down around the globe. As we do, the northern sky behind us descends, and once we reach the equator, the famous North Star is just about right on the horizon. Any further south, the North Star is not seen at all."
+          </p>
+        </div>
+    </article>		  
+  
+  </main>
+    
+  <footer>
+    <aside>
+      Weather Related<br>1994 Union Ct.<br>Greenville, US 98765<br>(234)564-3200<br>
+      contact@weatherrelated.com
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Related | <span id="jsdate"></span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/wu-weathersp.js"></script>
+</body>
+</html>
