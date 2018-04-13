@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mountain Spoke - Bicycle Shop</title>
+  <meta name="author" content="Brandy Robinson">
+  <meta name="description" content="The Mountain Spoke is a bicycle shop that caters the needs of all those who love to bike. We have daily guided tours of the beautiful Rocky Mountains.">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Flavors" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet"><!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/contact.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/contact-medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/contact-large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header class="clearfix">
+    <figure class="logo">
+      <img src="images/logo.jpg" alt="The site logo"
+             srcset="images/logo1.jpg 1x, images/logo2.jpg 2x, images/logo3.jpg 3x">
+    </figure>
+      
+    <div class="heading"><h1>The Mountain Spoke</h1></div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="adventuretours.html">Adventure Tours</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li class="active"><a href="#">Contact Us</a></li>
+    </ul>		
+  </nav>
+    
+  <main class="home">
+      <p class="info">
+        Store Hours: <br>Monday - Saturday 9am - 6pm <br>Closed Sundays<br><br>
+        Service Hours: <br>Monday - Friday 9am - 6pm<br><br>
+        Telephone #: <br>(406)-555-BIKE (2453)<br><br>
+        Manager: <br>Tab Zec
+      </p>
+      <p>How to find us:</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9314410406196!2d-111.09291154871825!3d45.67227662745319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1522764631069" width="400" height="300" frameborder="0" style="border:0" allowfullscreen>
+      </iframe>
+      
+      <form action="thanks.html" method="get" name="contact" id="map">
+      <fieldset>
+        <legend><span>Personal Information</span></legend>
+          <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[A-Za-z ]{5,99}" required></label>
+          <label><span>Email:</span><input name="email" type="email" value="" placeholder="bozeman@gmail.com"></label>
+          <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="4065553210" pattern="[0-9]{10,20}" required></label>
+          <label><span>Zipcode:</span><input name="zipcode" type="number" value="" placeholder="54321" required></label>
+      </fieldset>
+      <fieldset>
+        <legend><span>Additional Information:</span></legend>
+          <label><span><textarea name="message" placeholder="If you'd like to contact us with any questions or concerns please fill out this form." required></textarea></span></label>
+      </fieldset>
+          <input type="submit" value="Submit" class="submitBtn">
+        <input name="redirect" type="hidden" value="thanks.html">
+    </form>
+  </main>
+    
+  <footer>
+    <aside>
+      The Mountain Spoke<br>
+      3950 Valley Commons Drive<br>
+      Bozeman, MT 59718
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="jsdate"></span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+</body>
+</html>

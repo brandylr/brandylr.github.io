@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mountain Spoke - Bicycle Shop</title>
+  <meta name="author" content="Brandy Robinson">
+  <meta name="description" content="The Mountain Spoke is a bicycle shop that caters the needs of all those who love to bike. We have daily guided tours of the beautiful Rocky Mountains.">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Flavors" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet"><!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/service.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/home-medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/home-large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header class="clearfix">
+    <figure class="logo">
+      <img src="images/logo0.jpg" alt="The site logo"
+             srcset="images/logo1.jpg 1x, images/logo2.jpg 2x, images/logo3.jpg 3x">
+    </figure>
+      
+    <div class="heading"><h1>The Mountain Spoke</h1></div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="adventuretours.html">Adventure Tours</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li class="active"><a href="#">Service</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <table class="service">
+      <thead>
+        <tr>
+          <th title="Field #1">Service Package</th>
+          <th title="Field #2">Description</th>
+          <th title="Field #3">Call for Appointment</th>
+          <th title="Field #4">Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Leisure</td>
+          <td>Lube, Air Tires, Component Check, Make Adjustments</td>
+          <td>Yes</td>
+          <td>$65</td>
+        </tr>
+        <tr>
+          <td>Off Road</td>
+          <td>Leisure Pkg, Thorough Cleaning</td>
+          <td>Yes</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>Extreme</td>
+          <td>Off Road Pkg, Component Replacement, Deep Cleaning</td>
+          <td>Yes</td>
+          <td>$400</td>
+        </tr>
+        <tr>
+          <td>Tire</td>
+          <td>Wheel True</td>
+          <td>No</td>
+          <td>$20</td>
+        </tr>
+        <tr>
+          <td>Ala Carte</td>
+          <td>Individual Services</td>
+          <td>No</td>
+          <td>Prices Vary</td>  
+        </tr>
+      </tbody>
+    </table>
+  </main>
+    
+  <footer>
+    <aside>
+      The Mountain Spoke<br>
+      3950 Valley Commons Drive<br>
+      Bozeman, MT 59718
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="jsdate"></span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/service.js"></script>
+</body>
+</html>

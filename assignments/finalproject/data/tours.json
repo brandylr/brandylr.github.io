@@ -1,0 +1,28 @@
+{
+"tours" : [
+    {
+        "name" : "Emerald Lake Trail",
+        "startTime" : "10 am",
+        "length" : "10 miles round trip",
+        "duration" : "5 hours",
+        "skillLevel" : "Intermediate",
+        "cost" : "$75"
+    },
+    {
+        "name" : "South Cottonwood Trail",
+        "startTime" : "10 am",
+        "length" : "12 miles round trip",
+        "duration" : "6 hours",
+        "skillLevel" : "Advanced",
+        "cost" : "$80"
+    },
+    {
+        "name" : "Sourdough Trail",
+        "startTime" : "8 am",
+        "length" : "16 miles round trip",
+        "duration" : "10 hours",
+        "skillLevel" : "Beginning - Intermediate",
+        "cost" : "$100"
+    }
+]
+}

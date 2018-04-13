@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mountain Spoke - Bicycle Shop</title>
+  <meta name="author" content="Brandy Robinson">
+  <meta name="description" content="The Mountain Spoke is a bicycle shop that caters the needs of all those who love to bike. We have daily guided tours of the beautiful Rocky Mountains.">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Flavors" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet"><!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/event.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/event-medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/event-large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header class="clearfix">
+    <figure class="logo">
+      <img src="images/logo0.jpg" alt="The site logo"
+             srcset="images/logo1.jpg 1x, images/logo2.jpg 2x, images/logo3.jpg 3x">
+    </figure>
+      
+    <div class="heading"><h1>The Mountain Spoke</h1></div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="adventuretours.html">Adventure Tours</a></li>
+      <li class="active"><a href="#">Events</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>		
+  </nav>
+    
+  <main class="home">
+    <section class="event">
+      <img src="images/event2.jpg" alt="Scenic Overlook" width="190" height="150">
+      <img src="images/event3.jpg" alt="Mountain Biking with Yellow Flowers" width="190" height="150">
+      <img src="images/event4.jpg" alt="Mountain Biking with Blue Flowers" width="190" height="150">
+      <img src="images/event5.jpg" alt="Riding Across a Log" width="190" height="150" >
+    </section>
+    <section class="registration">
+      <p>
+        Cycle the Continental Divide!<br>
+        The Mountain Spoke's Annual Event
+      </p>
+      <ul>
+        <li>Dates: August 3-5, 2018 Starting in Dell, MT and finishing in Butte, MT</li>
+        <li>Cost: $750 (This covers meals, snacks, and campground fees)</li>
+        <li>Skill Level: Intermediate to Advanced</li>
+        <li>Basic Requirements:
+          <ul>
+            <li>You must supply your own bicycle.</li>
+            <li>No one under the age of 18</li>
+            <li>Current physical is required</li>
+            <li>Ride at your own risk</li>
+          </ul>
+        </li>
+      </ul>
+      <img src="images/event1.jpg" alt="Map of Divide Route">
+      <form action="regthanks.html" method="get" name="divide" id="route">
+        <fieldset>
+          <legend><span>Personal Information</span></legend>
+            <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[A-Za-z -.]{5,99}" required></label>
+            <label><span>Email:</span><input name="email" type="email" value="" placeholder="bozeman@gmail.com"></label>
+            <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="4065553210" pattern="[0-9]{10,20}" required></label>
+            <label><span>Birthday:</span><input name="bday" type="date" value="" placeholder="MM/DD/YYYY" required></label>
+            <label><span>Home State or Country:</span><input name="state" type="text" value="" placeholder="MT" pattern="[A-Za-z ]{2,20}" required></label>
+        </fieldset>
+        <fieldset>
+          <legend><span>Special Accommodations/Comments</span></legend>
+          <label><span><textarea name="message" placeholder="Please let us know of any concerns you have or any special accommodations you may need."></textarea></span></label>
+        </fieldset>
+          <input type="submit" value="Register" class="submitBtn">
+          <input name="redirect" type="hidden" value="regthanks.html">
+      </form>
+    </section>
+  </main>
+    
+  <footer>
+    <aside>
+      The Mountain Spoke<br>
+      3950 Valley Commons Drive<br>
+      Bozeman, MT 59718
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="jsdate"></span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/home.js"></script>
+</body>
+</html>

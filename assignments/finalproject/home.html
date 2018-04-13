@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mountain Spoke - Bicycle Shop</title>
+  <meta name="author" content="Brandy Robinson">
+  <meta name="description" content="The Mountain Spoke is a bicycle shop that caters the needs of all those who love to bike. We have daily guided tours of the beautiful Rocky Mountains.">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Flavors" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet"><!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/home-main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/home-medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/home-large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head>
+<body>
+
+  <header class="clearfix">
+    <figure class="logo">
+      <img src="images/logo0.jpg" alt="The site logo"
+             srcset="images/logo1.jpg 1x, images/logo2.jpg 2x, images/logo3.jpg 3x">
+    </figure>
+      
+    <div class="heading"><h1>The Mountain Spoke</h1></div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+      <li class="active"><a href="home.html">Home</a></li>
+      <li><a href="adventuretours.html">Adventure Tours</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+    <section class="pics">
+      <img src="images/home1.jpg" alt="Montana has great biking trails">
+      <img src="images/home2.jpg" alt="A family mountain biking">
+      <img src="images/home3.jpg" alt="Mountain biker with dog in winter">
+      <img src="images/home4.jpg" alt="Mountain bikers jumping">
+    </section>
+    <section class="home">
+      <section class="special">
+          <h1><p>Coming Soon!</p></h1>
+          <h2><p>Our Annual</p></h2>
+        <figure class="cycling">
+          <img src="images/cyclingeventsm.jpg" alt="A man mountain biking">
+        </figure>
+        <figure class="event">
+          <img src="images/cyclingeventsm.jpg" alt="A man mountain biking" sizes="50vw"
+           srcset="images/cyclingeventsm.jpg 600w, images/cyclingeventlg.jpg 900w">
+        </figure>
+      
+          <p>For more details click here<a href="events.html"><button>Ride the Divide</button></a></p>
+      </section>
+      <section class="tours">
+        <p>Check out our daily guided tours.</p>
+        <p>We offer tours for all skill levels.</p>
+        <img src="images/Cyclingtour.jpg" alt="Mountain Bikers">
+        
+      </section>
+     
+      <section class="bike">
+          <p>Featured mountain bike of the month.</p> 
+          <img src="images/featuredbike.jpg" alt="Cannondale bike">
+          <p>Cannondale Trail Series $699.99-$1499.99</p>
+      </section>
+    </section>
+    
+  </main>
+    
+  <footer>
+    <aside>
+      The Mountain Spoke<br>
+      3950 Valley Commons Drive<br>
+      Bozeman, MT 59718<br>
+      
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span><a href="references.html">References</a></span> | <span><a href="The%20Mountain%20Spoke.mp4">Overview Video</a></span> | <span id="jsdate"></span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/home.js"></script>
+</body>
+</html>

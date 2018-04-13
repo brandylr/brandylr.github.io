@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Mountain Spoke - Bicycle Shop</title>
+  <meta name="author" content="Brandy Robinson">
+  <meta name="description" content="The Mountain Spoke is a bicycle shop that caters the needs of all those who love to bike. We have daily guided tours of the beautiful Rocky Mountains.">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Flavors" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+English" rel="stylesheet"><!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/sales.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/sales-medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/sales-large.css" rel="stylesheet">   <!-- large/wide/desktop views -->
+  
+  
+</head>
+<body>
+
+  <header>
+    <figure class="logo">
+      <img src="images/logo0.jpg" alt="The site logo"
+             srcset="images/logo1.jpg 1x, images/logo2.jpg 2x, images/logo3.jpg 3x">
+    </figure>
+      
+    <div class="heading"><h1>The Mountain Spoke</h1></div>
+  </header>
+
+  <!-- site navigation use placeholder references -->
+  <nav>
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="adventuretours.html">Adventure Tours</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li class="active"><a href="#">Sales</a></li>
+      <li><a href="service.html">Service</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+      <ul class="sales">
+		<li>Cannondale
+          <ul>
+            <li>Trail Series</li>
+            <li>$699.99-$1,499.99</li>
+            <li>Specs:</li>
+            <li>Forks: RockShox</li>
+            <li>Drivetrain: Shimano SLX</li>
+            <li>Brakes: Shimano Deore Hydro Disc</li>
+            <li>Rims: WTB STP i23 TCS</li>
+            <li><img src="images/cannondale.jpg" alt="Cannondale Bike"></li>
+          </ul>
+        </li>
+		<li>Giant
+          <ul>
+            <li>Trance Series</li>
+            <li>$2,300.00 - $8,160.00</li>
+            <li>Specs:</li>
+            <li>Forks: RockShox RCT3 Solo Air</li>
+            <li>Drivetrain: SRAM X01 Eagle</li>
+            <li>Brakes: SRAM Guide RSC</li>
+            <li>Rims: Giant TRX 0</li>
+            <li><img src="images/Giant.jpg" alt="Giant Bike"></li>
+          </ul>
+        </li>
+		<li>Mongoose
+          <ul>
+            <li>Switchback Series</li>
+            <li>$399.00 - $499.00</li>
+            <li>Specs:</li>
+            <li>Forks: HL-565</li>
+            <li>Drivetrain: Shimano Acera STX</li>
+            <li>Brakes: Mongoose Hydraulic Disc</li>
+            <li>Rims: Xposure MDC-20</li>
+            <li><img src="images/Mongoose.jpg" alt="Mongoose Bike"></li>
+          </ul>
+        </li>
+      </ul>
+      
+  </main>
+    
+  <footer>
+    <aside>
+      The Mountain Spoke<br>
+      3950 Valley Commons Drive<br>
+      Bozeman, MT 59718
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="jsdate"></span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script>$(function(){
+		// All jQuery code goes here
+         $('.sales > li').hover(function() {
+            $(this).children("ul").slideToggle(500);
+        })
+	})
+  </script>
+  
+  
+</body>
+</html>

@@ -1,0 +1,161 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+  font-size: 16px;
+  font-family: Cambria, sans-serif;
+  background-color: #d9d9d9;
+  color: #664331;
+}
+
+header, nav, main, footer { 
+    margin: 0;
+    padding: .5rem;
+    max-width: 600px;
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+}
+
+header {
+    background-color: #664331;
+    display: flex;
+    justify-content: center
+}
+header h1 {
+    font-family: "Flavors", Georgia, serif;
+    letter-spacing: .05em;
+    text-align: center;
+    color: #d9d9d9;
+}
+header figure.logo {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: #184e08;
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    color: #d9d9d9;
+    border: none;
+    font-size: 1.6rem;
+    box-shadow: none; 
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 1px solid #555;
+    display: flex;
+    flex-direction: column;
+}
+nav ul li {
+    margin: 0;
+    padding: .5em;
+    border-bottom: 1px solid #555;
+    text-align: center;
+}
+nav ul li:last-child{
+    border-bottom: none;
+}
+nav ul li a {
+    font-family: "IM Fell English", "Cambria", serif;
+    color: #d9d9d9;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+nav ul li.active a {
+    background-color: #0909b2;
+    color: #d9d9d9;
+    padding: .2em;
+}
+nav ul li a:hover {
+    background-color: #d9d9d9;
+    color: #000;
+    padding: .2em;
+}
+nav ul.hide { display: none;}
+
+main {}
+.event{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.registration {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.registration p {
+    text-align: center;
+    margin: 1em;
+    font-size: 1.5em;
+}
+.registration li {
+    margin: .5em;
+}
+fieldset{
+    background-color: #A69A95;
+    margin-top: .5rem;
+    width: 100%;
+    }
+legend {
+    background-color: #735245;
+    border: 1px solid black;
+    padding: .25em;
+    font-family: "IM Fell English";
+    color: #d9d9d9;
+}
+label{
+    display: block;
+    padding: .25em;
+    color: #664331;
+}
+label input {
+    font-size: 12px;
+    padding: .3em;
+}
+label span{
+    display: block;
+    padding-top: .75em;
+}
+label textarea {
+    vertical-align: top;
+    height: 20em;
+    width: 20em;
+}
+input.submitBtn {
+    padding: .5em;
+    border-radius: .5em;
+    width: 25%;
+    background-color: #0909b2;
+    color: #d9d9d9;
+    box-shadow: 4px 4px 10px #555;
+}
+footer {
+    font-family: "IM Fell English";
+    text-align: center;
+    
+}
+footer aside {
+    background-color: #184e08;
+    color: #d9d9d9;
+    padding: 1em;
+}
+
+footer>p {
+    background-color: #664331;
+    color: #d9d9d9;
+    margin: 0;
+    padding: 1em;
+} /* This structure refers to p elements that are direct children of the footer element */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear:both;
+}
+/* Other Class Selectors */

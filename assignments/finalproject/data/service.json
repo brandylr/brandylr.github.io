@@ -1,0 +1,34 @@
+{
+"services" : [
+    {
+        "Service Package" : "Leisure",
+        "Description" : "Lube, Air Tires, Component Check, Make Adjustments",
+        "Call for Appointment" : "Yes",
+        "Cost" : "$65"
+    },
+    {
+        "Service Package" : "Off Road",
+        "Description" : "Leisure Pkg, Thorough Cleaning",
+        "Call for Appointment" : "Yes",
+        "Cost" : "$100"
+    },
+    {
+        "Service Package" : "Extreme",
+        "Description" : "Off Road Pkg, Component Replacement, Deep Cleaning",
+        "Call for Appointment" : "Yes",
+        "Cost" : "$400"
+    },
+    {
+        "Service Package" : "Tire",
+        "Description" : "Wheel True",
+        "Call for Appointment" : "No",
+        "Cost" : "$20"
+    },
+    {
+        "Service Package" : "Ala Carte",
+        "Description" : "Individual Services",
+        "Call for Appointment" : "No",
+        "Cost" : "Prices Vary"
+    }
+]
+}
